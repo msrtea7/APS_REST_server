@@ -1,0 +1,28 @@
+name,vartype,uom,specified,group,range,description
+L,Length,m,True,Vessel Data,"[0.001, 1000000.0]",Drum horizontal length or vertical height
+D,Diameter,m,True,Vessel Data,"[0.001, 1000000.0]",Drum diameter
+LD,Ratio,,False,Vessel Data,"[0.001, 1000000.0]",Drum length to diameter ratio
+P,Pressure,kPa,False,Operation,"[1.0, 20000.0]",Drum pressure (minimum of inlet pressures)
+T,Temperature,K,False,Operation,"[100.0, 2000.0]",Drum temperature (equilibrium)
+Tv,Temperature,K,False,Operation,"[100.0, 2000.0]",Drum vapor holdup temperature
+Tl,Temperature,K,False,Operation,"[100.0, 2000.0]",Drum liquid holdup temperature
+Duty,Heat_Duty,kJ/s,True,Operation,"[-1000000000.0, 1000000000.0]",Drum duty (equilibrium). This the net duty excluding external duties connected to the Heat ports.\n     Positive value represents heat duty added to the fluid.\n     Negative value represents heat duty removed from the fluid.
+DutyV,Heat_Duty,kJ/s,True,,"[-1000000000.0, 1000000000.0]",Drum duty to non-equilibrium vapor holdup.\n     Positive value represents heat duty added to the vapor holdup.\n     Negative value represents heat duty removed from the vapor holdup.
+DutyL,Heat_Duty,kJ/s,True,,"[-1000000000.0, 1000000000.0]",Drum duty to non-equilibrium liquid holdup.\n     Positive value represents heat duty added to the liquid holdup.\n     Negative value represents heat duty removed from the liquid holdup.
+HeatDuty,Heat_Duty,kJ/s,False,Operation,"[-1000000000.0, 1000000000.0]",Drum heat duty. This is the duty connected to the Heat ports.
+VF,Mole_Composition,mole fraction,False,Operation,"[-0.99999, 1.99999]","Drum feed molar vaporization (bubble=0, dew=1)"
+Level,Fraction,fraction,True,Operation,"[0.0, 1.0]",Drum liquid level fraction value (including heads)
+LHeight,Length,m,False,Operation,"[0.0, 1e+20]",Drum liquid level height value (above bottom tangent for vertical drum)
+tau,Time,s,False,Vessel Data,"[0.0, 0.0]",Drum liquid residence time
+V,Volume,m3,False,Vessel Data,"[0.0, 1000000.0]",Drum volume
+Mm,Metal_Mass,kg,False,Heat Transfer,"[0.001, 1000000000.0]",Drum metal mass for heat transfer
+thk,Thickness,mm,True,Heat Transfer,"[0.001, 1000.0]",Drum wall thickness for heat transfer
+rhom,Mass_Density,kg/m3,True,Heat Transfer,"[1e-06, 1000000.0]",Drum metal mass density for heat transfer
+Vl,Volume,m3,False,,"[0.0, 1000000.0]",Drum liquid volume
+VFrev[S14],Mole_Composition,mole fraction,True,,"[0.0, 1.0]","Drum feed stream reverse fluid phase specification (Default 1 is for vapor return, update to 0 for liquid return)"
+DutymV,Heat_Duty,kJ/s,False,,"[-1000000000.0, 1000000000.0]",Drum duty loss from vapor to metal wall for non equilibrium.\n     Positive value represents heat loss to the metal wall.\n     Negative value represents heat gain from the metal wall
+DutymL,Heat_Duty,kJ/s,False,,"[-1000000000.0, 1000000000.0]",Drum equilibrium duty loss to metal wall or liquid duty loss to metal wall for non equilibrium.\n     Positive value represents heat loss to the metal wall.\n     Negative value represents heat gain from the metal wall
+LDE_In[S14],Real,,False,,"[-1000000.0, 1000000.0]",Drum difference between geometric length and inlet port elevation change\n (L - DE_In) in case of vertical orientation\n (D - DE_In) in case of horizontal and spherical orientations.
+MaxLDE_In,Real,,False,,"[-1000000.0, 1000000.0]",Drum maximum difference between geometric length and inlet port elevation change
+MinLDE_In,Real,,False,,"[-1000000.0, 1000000.0]",Drum minimum difference between geometric length and inlet port elevation change
+VFu,Mole_Composition,mole fraction,False,,"[-0.99999, 1.99999]","Drum molar vapor fraction\nVLE: unbounded VFu where VFu < 0 is subcooled, VFu = 0 is the bubble point, VFu = 1 is the dew point, and VFu > 1 is superheated\nVLLE: bounded VF (0 ≤ VF ≤ 1) where VF = 0 is the bubble point (or subcooled) and VF = 1 is the dew point (or superheated)"

@@ -1,0 +1,5 @@
+name,direction,porttype,ismultiple
+In,In,Lib:Submodels.FlowPort,False
+Out,Out,Lib:Submodels.FlowPort,False
+MechIn,In,Lib:Submodels.MechPort,False
+IGVin,In,Lib:Submodels.ControlPort,False
