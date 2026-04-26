@@ -29,7 +29,7 @@ var_mgr = sc.GetService("IVariableManager")
 sim_name = "Haber7"
 path = "Comp1.P2"
 value = 201
-unit = "bar"
+unit = "baaa"
 
 r = sim_mgr.OpenSimulation(sim_name).Result
 time.sleep(4)
