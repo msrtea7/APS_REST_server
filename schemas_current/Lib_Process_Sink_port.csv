@@ -1,0 +1,2 @@
+name,direction,porttype,ismultiple
+In,In,Lib:Submodels.FlowPort,False

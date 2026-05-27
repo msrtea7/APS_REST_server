@@ -1,0 +1,4 @@
+name,direction,porttype,ismultiple
+In[S14],In,Lib:Submodels.FlowPort,True
+Vout,Out,Lib:Submodels.FlowPort,False
+Lout,Out,Lib:Submodels.FlowPort,False

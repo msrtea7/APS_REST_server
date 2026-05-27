@@ -1,0 +1,32 @@
+name,vartype,uom,specified,group,range,description
+P,Pressure,kPa,False,Operation,"[1.0, 20000.0]",Mix pressure (minimum)
+T,Temperature,K,False,Operation,"[100.0, 2000.0]",Mix temperature
+SumFin,Mole_Flow,kmol/s,False,,"[0.0, 0.0]",Mix sum of feed flow
+SumCin[H2],Mole_Flow,kmol/s,False,,"[0.0, 0.0]",Mix sum of component input flows
+SumCin[N2],Mole_Flow,kmol/s,False,,"[0.0, 0.0]",Mix sum of component input flows
+SumCin[Argon],Mole_Flow,kmol/s,False,,"[0.0, 0.0]",Mix sum of component input flows
+SumCin[NH3],Mole_Flow,kmol/s,False,,"[0.0, 0.0]",Mix sum of component input flows
+SumCout[H2],Mole_Flow,kmol/s,False,,"[0.0, 0.0]",Mix sum of component output flows
+SumCout[N2],Mole_Flow,kmol/s,False,,"[0.0, 0.0]",Mix sum of component output flows
+SumCout[Argon],Mole_Flow,kmol/s,False,,"[0.0, 0.0]",Mix sum of component output flows
+SumCout[NH3],Mole_Flow,kmol/s,False,,"[0.0, 0.0]",Mix sum of component output flows
+SumFHin,Heat_Flow,kJ/s,False,,"[0.0, 0.0]",Mix total feed flow of enthalpy
+SumFHout,Heat_Flow,kJ/s,False,,"[0.0, 0.0]",Mix total product flow of enthalpy
+FHin[S4],Heat_Flow,kJ/s,False,,"[0.0, 0.0]",Mix feed flow of enthalpy per stream
+FHin[S12],Heat_Flow,kJ/s,False,,"[0.0, 0.0]",Mix feed flow of enthalpy per stream
+Hmean,Mole_Enthalpy,kJ/kmol,False,,"[0.0, 0.0]",Mix mean inlet enthalpy
+zmean[H2],Mole_Composition,mole fraction,False,,"[0.0, 1.0]",Mix mean inlet composition
+zmean[N2],Mole_Composition,mole fraction,False,,"[0.0, 1.0]",Mix mean inlet composition
+zmean[Argon],Mole_Composition,mole fraction,False,,"[0.0, 1.0]",Mix mean inlet composition
+zmean[NH3],Mole_Composition,mole fraction,False,,"[0.0, 1.0]",Mix mean inlet composition
+deltaF,Mole_Flow,kmol/s,False,,"[0.0, 1000000.0]",Mix zero flow safeguard
+Fin,Mole_Flow,kmol/s,False,,"[0.0, 1000000.0]",Mix inlet flow (non-negative)
+Frev,Mole_Flow,kmol/s,False,,"[0.0, 0.0]",Mix incoming (reverse) flow from Out port
+SumFout,Mole_Flow,kmol/s,False,,"[0.0, 0.0]",Mix sum of flow post reaction
+dMdt[H2],Real,,False,,"[-1000000.0, 1000000.0]",Mix composition time derivative
+dMdt[N2],Real,,False,,"[-1000000.0, 1000000.0]",Mix composition time derivative
+dMdt[Argon],Real,,False,,"[-1000000.0, 1000000.0]",Mix composition time derivative
+dMdt[NH3],Real,,False,,"[-1000000.0, 1000000.0]",Mix composition time derivative
+dEvoldt,Real,,False,,"[-1000000.0, 1000000.0]",Mix energy holdup per volume time derivative
+dMtdt,Real,,False,,"[-1000000.0, 1000000.0]",Mix total molar holdup time derivative
+Feps,Mole_Flow,kmol/s,False,,"[0.0, 1000000.0]",Mix small sweep flow safeguard used to issue a warning if the flows is smaller than eps.

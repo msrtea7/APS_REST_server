@@ -1,0 +1,43 @@
+name,vartype,uom,specified,group,range,description
+W,Mass_Flow,kg/s,False,Operation,"[-1000000.0, 1000000.0]",Compressor mass flow
+F,Mole_Flow,kmol/s,False,Operation,"[-1000000.0, 1000000.0]",Compressor molar flow
+Q,Vol_Flow,m3/s,False,Operation,"[-1000000.0, 1000000.0]",Compressor inlet actual volumetric flow
+Qref,Vol_Flow,m3/s,False,Compressor Data,"[0.0, 0.0]",Compressor reference inlet actual volumetric flow for scaled curve
+P1,Pressure,kPa,False,Operation,"[1.0, 20000.0]",Compressor inlet pressure
+P2,Pressure,kPa,True,Operation,"[1.0, 20000.0]",Compressor outlet pressure
+DP,Diff_Pressure,kPa,False,Operation,"[-50000.0, 50000.0]",Compressor pressure rise (Out - In)
+Pr,Ratio,,False,Operation,"[0.0, 1000.0]",Compressor pressure ratio
+Head,Gas_Head,kJ/kg,False,Operation,"[0.0, 0.0]",Compressor mass based adiabatic head (Out - In)
+HeadPol,Gas_Head,kJ/kg,False,Operation,"[0.0, 0.0]",Compressor mass based polytropic head (Out - In)
+HeadRef,Gas_Head,kJ/kg,False,Compressor Data,"[0.0, 0.0]",Compressor reference head for scaled curve
+T1,Temperature,K,False,Operation,"[100.0, 2000.0]",Compressor inlet temperature
+T2,Temperature,K,False,Operation,"[100.0, 2000.0]",Compressor outlet temperature
+eta,Fraction,fraction,True,Operation,"[0.0, 1.0]",Compressor isentropic efficiency
+etaPol,Fraction,fraction,False,Operation,"[0.0, 1.0]",Compressor polytropic efficiency
+Power,Mechanical_Power,kW,False,Operation,"[0.0, 0.0]",Compressor work applied to fluid (excludes mechanical losses)
+Power_Loss,Mechanical_Power,kW,True,,"[0.0, 0.0]","Compressor mechanical losses [deprecated, remove in 7.1]"
+PowerLoss,Mechanical_Power,kW,True,Operation,"[0.0, 0.0]",Compressor mechanical losses
+ShaftPower,Mechanical_Power,kW,False,Operation,"[0.0, 0.0]",Compressor power including frictional losses
+Speed,Speed,rpm,True,Operation,"[0.0, 1000000.0]",Compressor rotational speed
+IGV,Fraction,fraction,True,Operation,"[0.0, 1.0]",Compressor IGV position
+Wadcalc,Mole_Enthalpy,kJ/kmol,False,,"[0.0, 0.0]",Compressor adiabatic work using constant isentropic coefficient
+Wp,Mole_Enthalpy,kJ/kmol,False,,"[0.0, 0.0]",Compressor polytropic work
+WpCalc,Mole_Enthalpy,kJ/kmol,False,,"[0.0, 0.0]",Compressor polytropic work before correction
+fs,Ratio,,False,,"[0.0, 0.0]",Compressor Schultz correction factor
+nis,Dimensionless,,False,,"[0.1, 15.0]",Compressor isentropic coefficient
+np,Dimensionless,,False,,"[0.0, 0.0]",Compressor polytropic coefficient
+npt,Dimensionless,,False,,"[0.0, 0.0]",Compressor torn polytropic coefficient
+fst,Ratio,,False,,"[0.0, 0.0]",Compressor torn Schultz correction factor
+Wad,Mole_Enthalpy,kJ/kmol,False,,"[0.0, 0.0]",Compressor isentropic work
+Wac,Mole_Enthalpy,kJ/kmol,False,,"[0.0, 0.0]",Compressor actual work
+VF,Mole_Composition,mole fraction,False,,"[0.0, 1.0]",Compressor inlet vapor fraction
+FlowScale,Dimensionless,,True,Curve Scaling,"[0.0, 0.0]",Compressor scale factor for flow.\nThis variable will stretch the Flow vs. Head and Flow vs. Efficiency curves along the flow axis.
+HeadScale,Dimensionless,,True,Curve Scaling,"[0.0, 0.0]",Compressor scale factor for head.\nThis variable will stretch the Flow vs. Head curve along the Head axis.
+etaScale,Dimensionless,,True,Curve Scaling,"[0.0, 0.0]",Compressor scale factor for efficiency.\nThis variable will stretch the Flow vs Efficiency curve along the Efficiency axis.
+gcf,Dimensionless,,False,Inlet Conditions,"[0.0, 10.0]",Compressor Gas Compressibility Factor at inlet conditions
+MW,Mole_Weight,kg/kmol,False,Inlet Conditions,"[1.0, 1000000.0]",Compressor gas molecular weight
+CpCv,Dimensionless,,False,Inlet Conditions,"[0.0, 1000.0]",Compressor ideal gas heat capacity ratio at inlet conditions
+T,Temperature,K,False,Inlet Conditions,"[100.0, 2000.0]",Compressor inlet temperature
+a,Velocity,m/s,False,Inlet Conditions,"[0.0, 1000000.0]",Compressor acoustic velocity at inlet conditions
+dimScale,Dimensionless,,False,,"[0.1, 1000.0]",Compressor non-dimensional scaling factor
+dimScale_t,Dimensionless,,False,,"[0.1, 1000.0]",Compressor non-dimensional scaling factor (torn)

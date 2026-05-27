@@ -1,0 +1,10 @@
+name,paramtype,uom,issetbyuser,group,description
+CEPCI,Dimensionless,,False,Summary,Global Chemical Engineering Plant Cost Index
+DaysPerYear,Real,,False,Summary,Summary days of operation per year
+EconomicAnalysis,Enumeration,,False,Economic Analysis,Summary option to turn on economic analysis tool (for NPV and ROI calculation)
+ConstructionTime,Integer,,False,Economic Analysis,Summary years of construction required to build the project
+ProjectLife,Integer,,False,Economic Analysis,Summary years of the project's life
+AnnualTaxRate,Fraction,fraction,False,Economic Analysis,Summary annual tax rate for the project
+AnnualInterestRate,Fraction,fraction,False,Economic Analysis,Summary annual interest rate for the loans to build the project
+AnnualInflationRate,Fraction,fraction,False,Economic Analysis,Summary annual average inflation rate of the currency
+DepreciationType,Model Type,,False,Economic Analysis,Summary depreciation schedule for the project (default is no depreciation)

@@ -179,6 +179,12 @@ def set_parameter(body: dict = Body(...)):
     param_mgr.UpdateParameterValue(body["sim_name"], body["path"], body["value"], PARAM_TIMEOUT).Result
     return {"path": body["path"], "value": body["value"]}
 
+@app.post("/get_parameter")
+@handle_exceptions
+def get_parameter(body: dict = Body(...)):
+    val = param_mgr.ReadParameterValue(body["sim_name"], body["path"], body.get("unit"), PARAM_TIMEOUT).Result
+    return {"path": body["path"], "value": str(val)}
+
 @app.post("/create_fluid")
 @handle_exceptions
 def create_fluid(body: dict = Body(...)):
