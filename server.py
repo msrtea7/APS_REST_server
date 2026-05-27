@@ -160,11 +160,11 @@ def get_variable_value(body: dict = Body(...)):
     val = var_mgr.GetVariableValue(body["sim_name"], body["path"], None, VAR_TIMEOUT).Result
     return {"path": body["path"], "value": str(val)}
 
-@app.post("/get_variable_value")
-@handle_exceptions
-def get_variable_value(body: dict = Body(...)):
-    val = var_mgr.GetVariableValue(body["sim_name"], body["path"], body.get("unit"), VAR_TIMEOUT).Result
-    return {"path": body["path"], "value": str(val)}
+# @app.post("/get_variable_value")
+# @handle_exceptions
+# def get_variable_value_old(body: dict = Body(...)):
+#     val = var_mgr.GetVariableValue(body["sim_name"], body["path"], body.get("unit"), VAR_TIMEOUT).Result
+#     return {"path": body["path"], "value": str(val)}
 
 @app.post("/set_variable")
 @handle_exceptions
@@ -179,7 +179,7 @@ def set_parameter(body: dict = Body(...)):
     param_mgr.UpdateParameterValue(body["sim_name"], body["path"], body["value"], PARAM_TIMEOUT).Result
     return {"path": body["path"], "value": body["value"]}
 
-@app.post("/get_parameter")
+@app.post("/get_parameter_value")
 @handle_exceptions
 def get_parameter(body: dict = Body(...)):
     val = param_mgr.ReadParameterValue(body["sim_name"], body["path"], body.get("unit"), PARAM_TIMEOUT).Result
