@@ -1,9 +1,9 @@
 name,vartype,uom,specified,group,range,description
-Duty,Heat_Duty,kJ/s,False,Sizing Options,"[-1000000000.0, 1000000000.0]",HX duty (If negative swap parameter HotSide to Shell/Tube)
+Duty,Heat_Duty,kJ/s,True,Sizing Options,"[-1000000000.0, 1000000000.0]",HX duty (If negative swap parameter HotSide to Shell/Tube)
 dir,Dimensionless,,False,,"[-1.0, 1.0]",HX duty direction to use when shell side is cold
 DutyAbs,Heat_Duty,kJ/s,False,,"[-1000000000.0, 1000000000.0]",HX absolute duty (used to check temperature crossover)
 Dutyt,Heat_Duty,kJ/s,False,Tube Side Operation,"[-1000000000.0, 1000000000.0]",HX tube side duty (out - in)
-Tti,Temperature,K,False,Sizing Options,"[100.0, 2000.0]",HX tube side inlet temperature
+Tti,Temperature,K,False,Sizing Options,"[70.0, 2000.0]",HX tube side inlet temperature
 VFto,Mole_Composition,mole fraction,False,Sizing Options,"[-0.99999, 1.99999]","HX tube side outlet molar vapor fraction\nVLE: unbounded VFu where VFu < 0 is subcooled, VFu = 0 is the bubble point, VFu = 1 is the dew point, and VFu > 1 is superheated\nVLLE: bounded VF (0 ≤ VF ≤ 1) where VF = 0 is the bubble point (or subcooled) and VF = 1 is the dew point (or superheated)"
 Wt,Mass_Flow,kg/s,False,Tube Side Operation,"[-1000000.0, 1000000.0]",HX tube side mass flow
 DPt,Diff_Pressure,kPa,True,Tube Side Operation,"[-50000.0, 50000.0]",HX tube side pressure drop (use full properties to set reference conditions in TubeSide submodel)
@@ -11,4 +11,4 @@ Pto,Pressure,kPa,False,Tube Side Operation,"[1.0, 20000.0]",HX tube side outlet 
 Cpt,Mole_Heat_Capacity,kJ/kmol-K,False,,"[0.001, 1000000.0]",HX tube side molar heat capacity
 DTtito,Diff_Temperature,K,False,Temperature Differences,"[-1000.0, 1000.0]",HX tube inlet - tube outlet temperature difference
 taut,Time,s,False,Exchanger Data,"[0.0, 1000000000.0]",HX tube side residence time
-Tto,Temperature,K,True,Sizing Options,"[100.0, 2000.0]",HX tube side outlet temperature
+Tto,Temperature,K,False,Sizing Options,"[70.0, 2000.0]",HX tube side outlet temperature

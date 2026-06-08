@@ -4,14 +4,14 @@ F,Mole_Flow,kmol/s,False,Operation,"[-1000000.0, 1000000.0]",Compressor molar fl
 Q,Vol_Flow,m3/s,False,Operation,"[-1000000.0, 1000000.0]",Compressor inlet actual volumetric flow
 Qref,Vol_Flow,m3/s,False,Compressor Data,"[0.0, 0.0]",Compressor reference inlet actual volumetric flow for scaled curve
 P1,Pressure,kPa,False,Operation,"[1.0, 20000.0]",Compressor inlet pressure
-P2,Pressure,kPa,True,Operation,"[1.0, 20000.0]",Compressor outlet pressure
+P2,Pressure,kPa,False,Operation,"[1.0, 20000.0]",Compressor outlet pressure
 DP,Diff_Pressure,kPa,False,Operation,"[-50000.0, 50000.0]",Compressor pressure rise (Out - In)
-Pr,Ratio,,False,Operation,"[0.0, 1000.0]",Compressor pressure ratio
+Pr,Ratio,,True,Operation,"[0.0, 1000.0]",Compressor pressure ratio
 Head,Gas_Head,kJ/kg,False,Operation,"[0.0, 0.0]",Compressor mass based adiabatic head (Out - In)
 HeadPol,Gas_Head,kJ/kg,False,Operation,"[0.0, 0.0]",Compressor mass based polytropic head (Out - In)
 HeadRef,Gas_Head,kJ/kg,False,Compressor Data,"[0.0, 0.0]",Compressor reference head for scaled curve
-T1,Temperature,K,False,Operation,"[100.0, 2000.0]",Compressor inlet temperature
-T2,Temperature,K,False,Operation,"[100.0, 2000.0]",Compressor outlet temperature
+T1,Temperature,K,False,Operation,"[70.0, 2000.0]",Compressor inlet temperature
+T2,Temperature,K,False,Operation,"[70.0, 2000.0]",Compressor outlet temperature
 eta,Fraction,fraction,True,Operation,"[0.0, 1.0]",Compressor isentropic efficiency
 etaPol,Fraction,fraction,False,Operation,"[0.0, 1.0]",Compressor polytropic efficiency
 Power,Mechanical_Power,kW,False,Operation,"[0.0, 0.0]",Compressor work applied to fluid (excludes mechanical losses)
@@ -37,7 +37,7 @@ etaScale,Dimensionless,,True,Curve Scaling,"[0.0, 0.0]",Compressor scale factor 
 gcf,Dimensionless,,False,Inlet Conditions,"[0.0, 10.0]",Compressor Gas Compressibility Factor at inlet conditions
 MW,Mole_Weight,kg/kmol,False,Inlet Conditions,"[1.0, 1000000.0]",Compressor gas molecular weight
 CpCv,Dimensionless,,False,Inlet Conditions,"[0.0, 1000.0]",Compressor ideal gas heat capacity ratio at inlet conditions
-T,Temperature,K,False,Inlet Conditions,"[100.0, 2000.0]",Compressor inlet temperature
+T,Temperature,K,False,Inlet Conditions,"[70.0, 2000.0]",Compressor inlet temperature
 a,Velocity,m/s,False,Inlet Conditions,"[0.0, 1000000.0]",Compressor acoustic velocity at inlet conditions
 dimScale,Dimensionless,,False,,"[0.1, 1000.0]",Compressor non-dimensional scaling factor
 dimScale_t,Dimensionless,,False,,"[0.1, 1000.0]",Compressor non-dimensional scaling factor (torn)

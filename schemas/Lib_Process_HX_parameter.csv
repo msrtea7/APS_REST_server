@@ -1,6 +1,6 @@
 name,paramtype,uom,issetbyuser,group,description
 SSFluidType,Fluid Type,,False,,HX shell side fluid type
-TSFluidType,Fluid Type,,True,,HX tube side fluid type
+TSFluidType,Fluid Type,,False,,HX tube side fluid type
 DTOption,Enumeration,,False,Configuration,HX DT Option (Use Average to initialize for LMTD)
 UOption,Enumeration,,False,Film Coefficients,HX use constant overall U or side film coefficients
 HotSide,Enumeration,,False,Configuration,HX hot side (default is Duty is positive when shell side is hot)

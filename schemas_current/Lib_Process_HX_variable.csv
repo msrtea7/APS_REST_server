@@ -1,4 +1,0 @@
-name,vartype,uom,specified,group,range,description
-Duty,Heat_Duty,kJ/s,True,Sizing Options,"[-1000000000.0, 1000000000.0]",HX duty (If negative swap parameter HotSide to Shell/Tube)
-dir,Dimensionless,,False,,"[-1.0, 1.0]",HX duty direction to use when shell side is cold
-DutyAbs,Heat_Duty,kJ/s,False,,"[-1000000000.0, 1000000000.0]",HX absolute duty (used to check temperature crossover)

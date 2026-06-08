@@ -3,9 +3,9 @@ L,Length,m,True,Vessel Data,"[0.001, 1000000.0]",Drum horizontal length or verti
 D,Diameter,m,True,Vessel Data,"[0.001, 1000000.0]",Drum diameter
 LD,Ratio,,False,Vessel Data,"[0.001, 1000000.0]",Drum length to diameter ratio
 P,Pressure,kPa,False,Operation,"[1.0, 20000.0]",Drum pressure (minimum of inlet pressures)
-T,Temperature,K,False,Operation,"[100.0, 2000.0]",Drum temperature (equilibrium)
-Tv,Temperature,K,False,Operation,"[100.0, 2000.0]",Drum vapor holdup temperature
-Tl,Temperature,K,False,Operation,"[100.0, 2000.0]",Drum liquid holdup temperature
+T,Temperature,K,False,Operation,"[70.0, 2000.0]",Drum temperature (equilibrium)
+Tv,Temperature,K,False,Operation,"[70.0, 2000.0]",Drum vapor holdup temperature
+Tl,Temperature,K,False,Operation,"[70.0, 2000.0]",Drum liquid holdup temperature
 Duty,Heat_Duty,kJ/s,True,Operation,"[-1000000000.0, 1000000000.0]",Drum duty (equilibrium). This the net duty excluding external duties connected to the Heat ports.\n     Positive value represents heat duty added to the fluid.\n     Negative value represents heat duty removed from the fluid.
 DutyV,Heat_Duty,kJ/s,True,,"[-1000000000.0, 1000000000.0]",Drum duty to non-equilibrium vapor holdup.\n     Positive value represents heat duty added to the vapor holdup.\n     Negative value represents heat duty removed from the vapor holdup.
 DutyL,Heat_Duty,kJ/s,True,,"[-1000000000.0, 1000000000.0]",Drum duty to non-equilibrium liquid holdup.\n     Positive value represents heat duty added to the liquid holdup.\n     Negative value represents heat duty removed from the liquid holdup.

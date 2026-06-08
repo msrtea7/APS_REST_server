@@ -1,5 +1,5 @@
 name,paramtype,uom,issetbyuser,group,description
-FluidType,Fluid Type,,True,,Valve fluid type
+FluidType,Fluid Type,,False,,Valve fluid type
 ModeCheck,Enumeration,,False,Configuration,Global check for mode change warnings while still in Process mode
 FlowType,Enumeration,,False,Configuration,"Valve compressible, incompressible, or flow range calculations"
 CheckValve,Enumeration,,False,Configuration,Valve check valve to prevent reverse flow 

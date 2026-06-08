@@ -1,5 +1,5 @@
 name,paramtype,uom,issetbyuser,group,description
-FluidType,Fluid Type,,True,,Compressor fluid type
+FluidType,Fluid Type,,False,,Compressor fluid type
 FlowBasis,Enumeration,,False,Configuration,"Compressor Flow basis. Must match compressor curve. (e.g. if compressor curve is in mass units, use mass basis) "
 HeadOption,Enumeration,,False,Configuration,"Compressor Head Option.\n     AdiabaticGasHead: calculate the head based on a provided adiabatic gas head curve.\n     PolytropicGasHead: calculate the head based on a provided polytropic gas head curve.\n     PressureDiff: calculate the head based based on a provided curve for fans.\n     DischargePressure: The compressor curve sets the discharge pressure, head is derived from it."
 Efficiency,Enumeration,,False,Configuration,"Compressor efficiency option.\n     Constant: specify an overall efficiency value.\n     Curve:  use an available efficiency curve.\n     PowerCurve: compressor curve directly sets power, efficiency is derived from it."

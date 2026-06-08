@@ -1,5 +1,5 @@
 name,paramtype,uom,issetbyuser,group,description
-FluidType,Fluid Type,,True,,Mix fluid type
+FluidType,Fluid Type,,False,,Mix fluid type
 ModeCheck,Enumeration,,False,Configuration,Global check for mode change warnings while still in process mode
 InletPressures,Enumeration,,False,Configuration,"Mix Process mode inlet pressure option.\n     Minimum: allow any feed inlet pressure. The outlet pressure is then set to the minimum inlet pressure.\n     Balanced: automatically set all feed inlet pressures equal. Therefore, exactly one pressure specification\n     on the feed line must be freed up, typically a valve's, a pipe's or an exchanger's DP specification.\nFor Fluid Flow and Dynamic modes all feed inlet pressures are automatically balanced."
 eps,Mole_Flow,kmol/s,False,Configuration,Mix small flow safeguard

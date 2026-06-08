@@ -2,25 +2,15 @@ name,vartype,uom,specified,group,range,description
 Nt,Dimensionless,,True,Reactor Data,"[0.0, 1000000000.0]",PFR number of tubes
 L,Length,m,True,Reactor Data,"[0.0, 1e+20]",PFR reactor catalyst bed or tube length
 D,Diameter,m,True,Reactor Data,"[0.001, 1000000.0]",PFR reactor catalyst bed or tube internal diameter
-X[H2],Fraction,fraction,False,Operations,"[0.0, 0.0]",PFR reactor conversion for each component
 X[N2],Fraction,fraction,False,Operations,"[0.0, 0.0]",PFR reactor conversion for each component
-X[Argon],Fraction,fraction,False,Operations,"[0.0, 0.0]",PFR reactor conversion for each component
-X[NH3],Fraction,fraction,False,Operations,"[0.0, 0.0]",PFR reactor conversion for each component
+X[O2],Fraction,fraction,False,Operations,"[0.0, 0.0]",PFR reactor conversion for each component
+X[H2O],Fraction,fraction,False,Operations,"[0.0, 0.0]",PFR reactor conversion for each component
 Xmax,Fraction,fraction,False,Operations,"[0.0, 0.0]",PFR reactor component conversion maximum value
 eps,Fraction,fraction,True,Catalyst Data,"[0.001, 0.999]","PFR catalyst void fraction (porosity), defined as the ratio of catalyst void volume to the total catalyst volume.\nEps will affect the conversion when Basis=CatalystMass, and it will affect pressure drop when DPModelType=DPErgun."
 V,Volume,m3,False,Reactor Data,"[0.0, 1000000000.0]",PFR reactor bed or sum of all tube total volume
-T2,Temperature,K,False,Operations,"[100.0, 2000.0]",PFR outlet temperature
+T2,Temperature,K,False,Operations,"[70.0, 2000.0]",PFR outlet temperature
 Duty,Heat_Duty,kJ/s,False,Operations,"[-1000000000.0, 1000000000.0]",PFR reactor heat duty
 T[1],Temperature,K,False,Operations,"[0.0, 0.0]",PFR reactor temperature length profile
-T[2],Temperature,K,False,Operations,"[0.0, 0.0]",PFR reactor temperature length profile
-T[3],Temperature,K,False,Operations,"[0.0, 0.0]",PFR reactor temperature length profile
-T[4],Temperature,K,False,Operations,"[0.0, 0.0]",PFR reactor temperature length profile
-T[5],Temperature,K,False,Operations,"[0.0, 0.0]",PFR reactor temperature length profile
-T[6],Temperature,K,False,Operations,"[0.0, 0.0]",PFR reactor temperature length profile
-T[7],Temperature,K,False,Operations,"[0.0, 0.0]",PFR reactor temperature length profile
-T[8],Temperature,K,False,Operations,"[0.0, 0.0]",PFR reactor temperature length profile
-T[9],Temperature,K,False,Operations,"[0.0, 0.0]",PFR reactor temperature length profile
-T[10],Temperature,K,False,Operations,"[0.0, 0.0]",PFR reactor temperature length profile
 DP,Diff_Pressure,kPa,True,Operations,"[-50000.0, 50000.0]",PFR reactor pressure drop (submodel)
 tau,Time,s,False,Reactor Data,"[0.0, 1000000000.0]",PFR reactor residence time
 Ax,Cross_Sectional_Area,m2,False,Reactor Data,"[0.0, 1000000000000.0]",PFR reactor cross-sectional area

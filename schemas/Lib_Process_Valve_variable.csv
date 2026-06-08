@@ -2,9 +2,9 @@ name,vartype,uom,specified,group,range,description
 W,Mass_Flow,kg/s,False,Operation,"[-1000000.0, 1000000.0]",Valve mass flow
 Q,Vol_Flow,m3/s,False,Operation,"[-1000000.0, 1000000.0]",Valve inlet actual volumetric flow
 F,Mole_Flow,kmol/s,False,Operation,"[-1000000.0, 1000000.0]",Valve molar / standard volume flow
-DP,Diff_Pressure,kPa,False,Operation,"[-50000.0, 50000.0]",Valve pressure difference
+DP,Diff_Pressure,kPa,True,Operation,"[-50000.0, 50000.0]",Valve pressure difference
 P1,Pressure,kPa,False,Operation,"[1.0, 20000.0]",Valve inlet pressure
-P2,Pressure,kPa,True,Operation,"[1.0, 20000.0]",Valve outlet pressure
+P2,Pressure,kPa,False,Operation,"[1.0, 20000.0]",Valve outlet pressure
 Cv,Flow_Coeff,Cv,False,Valve Data,"[0.0, 1000000.0]",Valve flow coefficient
 ManPos,Signal,fraction,True,Operation,"[0.0, 1.0]",Valve manual position
 Pos,Signal,fraction,False,Operation,"[0.0, 1.0]",Valve actuator position

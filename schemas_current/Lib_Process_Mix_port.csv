@@ -1,4 +1,0 @@
-name,direction,porttype,ismultiple
-In[S4],In,Lib:Submodels.FlowPort,True
-In[S12],In,Lib:Submodels.FlowPort,True
-Out,Out,Lib:Submodels.FlowPort,False
