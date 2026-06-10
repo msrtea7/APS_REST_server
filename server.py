@@ -154,17 +154,21 @@ def set_variable_specification(body: dict = Body(...)):
     result = var_mgr.SetVariableSpecification(body["sim_name"], body["path"], body["is_specified"], VAR_TIMEOUT).Result
     return {"path": body["path"], "is_specified": body["is_specified"], "result": bool(result)}
 
+# @app.post("/get_variable_value")
+# @handle_exceptions
+# def get_variable_value(body: dict = Body(...)):
+#     val = var_mgr.GetVariableValue(body["sim_name"], body["path"], None, VAR_TIMEOUT).Result
+#     return {"path": body["path"], "value": str(val)}
+
 @app.post("/get_variable_value")
 @handle_exceptions
 def get_variable_value(body: dict = Body(...)):
-    val = var_mgr.GetVariableValue(body["sim_name"], body["path"], None, VAR_TIMEOUT).Result
-    return {"path": body["path"], "value": str(val)}
-
-# @app.post("/get_variable_value")
-# @handle_exceptions
-# def get_variable_value_old(body: dict = Body(...)):
-#     val = var_mgr.GetVariableValue(body["sim_name"], body["path"], body.get("unit"), VAR_TIMEOUT).Result
-#     return {"path": body["path"], "value": str(val)}
+    unit = body.get("unit")
+    val = var_mgr.GetVariableValue(body["sim_name"], body["path"], unit, VAR_TIMEOUT).Result
+    result = {"path": body["path"], "value": str(val)}
+    if unit is not None:
+        result["unit"] = unit
+    return result
 
 @app.post("/set_variable")
 @handle_exceptions

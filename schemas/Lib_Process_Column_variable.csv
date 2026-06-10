@@ -1,0 +1,281 @@
+name,vartype,uom,specified,group,range,description
+FInV[1],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInV[2],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInV[3],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInV[4],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInV[5],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInV[6],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInV[7],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInV[8],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInV[9],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInV[10],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInV[11],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInV[12],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInV[13],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar vapor feed rate profile
+FInL[1],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+FInL[2],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+FInL[3],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+FInL[4],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+FInL[5],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+FInL[6],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+FInL[7],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+FInL[8],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+FInL[9],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+FInL[10],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+FInL[11],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+FInL[12],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+FInL[13],Mole_Flow,kmol/s,False,Profiles,"[-1000000000.0, 1000000000.0]",Column molar liquid feed rate profile
+Contact,Fraction,fraction,True,Configuration,"[0.0, 0.0]","Column overall contact efficiency factor. For a rigorous column solution set Contact to 1. For smooth convergence set Contact to 1 after, but not before, changing Setup to Solve."
+Ptop,Pressure,kPa,True,Pressures,"[1.0, 20000.0]",Column top stage pressure
+Pbtm,Pressure,kPa,False,Pressures,"[1.0, 20000.0]",Column pressure below the last stage
+DPstage,Diff_Pressure,kPa,True,Pressures,"[-50000.0, 50000.0]",Column stage pressure drop
+DPtop,Diff_Pressure,kPa,True,,"[-50000.0, 50000.0]","Column Stage[1] pressure drop. By default, this is the basis for DPstep calculations when PressureDrop = Profile."
+DPcol,Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]","Column overall pressure drop representing the sum of the stage pressure drops.\nIf an internal condenser or reboiler is configured, DPcol also includes the pressure drop of those models."
+Vovhd,Mole_Flow,kmol/s,False,Product Rates,"[-1000000.0, 1000000.0]",Column molar vapor product rate
+Lbtms,Mole_Flow,kmol/s,False,Product Rates,"[-1000000.0, 1000000.0]",Column molar bottoms product rate
+Vmovhd,Mass_Flow,kg/s,False,Product Rates,"[0.0, 0.0]",Column mass vapor product rate
+Lmbtms,Mass_Flow,kg/s,False,Product Rates,"[0.0, 0.0]",Column mass bottoms product rate
+Dsmpstep,Diameter,m,False,,"[-100.0, 100.0]","Column sump incremental diameters. Dsmpstep is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower sump diameters relative to the bottom above."
+P[1],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+P[2],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+P[3],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+P[4],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+P[5],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+P[6],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+P[7],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+P[8],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+P[9],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+P[10],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+P[11],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+P[12],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+P[13],Pressure,kPa,False,Profiles,"[0.0, 0.0]",Column pressure profile
+T[1],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+T[2],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+T[3],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+T[4],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+T[5],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+T[6],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+T[7],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+T[8],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+T[9],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+T[10],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+T[11],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+T[12],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+T[13],Temperature,K,False,Profiles,"[0.0, 0.0]",Column temperature profile
+V[1],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+V[2],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+V[3],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+V[4],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+V[5],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+V[6],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+V[7],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+V[8],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+V[9],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+V[10],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+V[11],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+V[12],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+V[13],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column vapor molar rate profile
+L[1],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+L[2],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+L[3],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+L[4],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+L[5],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+L[6],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+L[7],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+L[8],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+L[9],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+L[10],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+L[11],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+L[12],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+L[13],Mole_Flow,kmol/s,False,Profiles,"[0.0, 0.0]",Column liquid molar rate profile
+VF[1],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+VF[2],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+VF[3],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+VF[4],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+VF[5],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+VF[6],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+VF[7],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+VF[8],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+VF[9],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+VF[10],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+VF[11],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+VF[12],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+VF[13],Mole_Composition,mole fraction,False,Profiles,"[-0.99999, 1.99999]","Column stage unbounded vapor fraction profile\n     VF<0: subcooled\n     VF=0: bubble point, total condenser\n     VF=1: dewpoint\n     VF>1: superheated"
+Duty[1],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+Duty[2],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+Duty[3],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+Duty[4],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+Duty[5],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+Duty[6],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+Duty[7],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+Duty[8],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+Duty[9],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+Duty[10],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+Duty[11],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+Duty[12],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+Duty[13],Heat_Duty,kJ/s,True,Profiles,"[-1000000000.0, 1000000000.0]",Column external duty profile
+DP[1],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DP[2],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DP[3],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DP[4],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DP[5],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DP[6],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DP[7],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DP[8],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DP[9],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DP[10],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DP[11],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DP[12],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DP[13],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop profile
+DPint[1],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+DPint[2],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+DPint[3],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+DPint[4],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+DPint[5],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+DPint[6],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+DPint[7],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+DPint[8],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+DPint[9],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+DPint[10],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+DPint[11],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+DPint[12],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+DPint[13],Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column pressure drop by the internals' hydraulic correlations profile
+Dcol,Diameter,m,True,Stage Sizing,"[0.001, 1000000.0]","Column diameter. Dcol is applied to the top stage and, summed up with an incremental diameter which defaults to zero, propagates downwards to each other stage."
+D[1],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+D[2],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+D[3],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+D[4],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+D[5],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+D[6],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+D[7],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+D[8],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+D[9],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+D[10],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+D[11],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+D[12],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+D[13],Diameter,m,False,Stage Sizing,"[0.001, 1000000.0]","Column stage diameters. For each stage, D is equal to the diameter of the stage above plus the stage's value for Dstep."
+Dstep[1],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Dstep[2],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Dstep[3],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Dstep[4],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Dstep[5],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Dstep[6],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Dstep[7],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Dstep[8],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Dstep[9],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Dstep[10],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Dstep[11],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Dstep[12],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Dstep[13],Diameter,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage diameters. Dstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for wider or narrower stage diameters relative to the stage above."
+Hcol,Length,m,False,Stage Sizing,"[0.0, 1e+20]",Column total height
+Hstage,Length,m,True,Stage Sizing,"[0.0, 1e+20]","Column height of a stage. Hstage is applied to the top stage and, summed up with an incremental height which defaults to zero, propagates downwards to each other stage."
+H[1],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+H[2],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+H[3],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+H[4],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+H[5],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+H[6],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+H[7],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+H[8],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+H[9],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+H[10],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+H[11],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+H[12],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+H[13],Length,m,False,Stage Sizing,"[0.0, 1e+20]","Column stage heights. For each stage, H is equal to the height of the stage above plus the stage's value for Hstep."
+Hstep[1],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+Hstep[2],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+Hstep[3],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+Hstep[4],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+Hstep[5],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+Hstep[6],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+Hstep[7],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+Hstep[8],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+Hstep[9],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+Hstep[10],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+Hstep[11],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+Hstep[12],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+Hstep[13],Length,m,True,Stage Sizing,"[-100.0, 100.0]","Column incremental stage heights. Hstep for each stage is defaulted to zero, and can be set to either positive or negative values thus allowing for larger or shorter stage heights relative to the stage above."
+TrayRatio,Ratio,,True,Stage Sizing,"[0.01, 1000.0]",Column tray ratio and holdup volume multiplier (equal to number of actual trays / number of theoretical stages)
+Reaction[1],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Reaction[2],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Reaction[3],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Reaction[4],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Reaction[5],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Reaction[6],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Reaction[7],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Reaction[8],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Reaction[9],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Reaction[10],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Reaction[11],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Reaction[12],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Reaction[13],Fraction,fraction,True,Reactions ,"[0.0, 1.0]","Column stage reaction rate factor. For kinetic and conversion reactions Reaction linearly scales up the rates vector, ie. Reaction=0 deactivates reactions, and 0<Reaction<1 means rates are applied partially. \nFor equilibrium reactions Reaction should always be set to 1."
+Vr[1],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Vr[2],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Vr[3],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Vr[4],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Vr[5],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Vr[6],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Vr[7],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Vr[8],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Vr[9],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Vr[10],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Vr[11],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Vr[12],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Vr[13],Volume,m3,True,Reactions ,"[0.0, 1000.0]",Column catalyst volume
+Mc[1],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Mc[2],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Mc[3],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Mc[4],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Mc[5],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Mc[6],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Mc[7],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Mc[8],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Mc[9],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Mc[10],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Mc[11],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Mc[12],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Mc[13],Metal_Mass,kg,True,Reactions ,"[0.001, 1000000.0]","Column catalyst mass, used for thermal inertia in dynamic mode"
+Cpc[1],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+Cpc[2],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+Cpc[3],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+Cpc[4],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+Cpc[5],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+Cpc[6],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+Cpc[7],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+Cpc[8],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+Cpc[9],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+Cpc[10],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+Cpc[11],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+Cpc[12],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+Cpc[13],Mass_Heat_Capacity,kJ/kg-K,True,Reactions ,"[0.001, 1000000.0]","Column catalyst heat capacity, used  for thermal inertia in dynamic mode"
+sumVol,Volume,m3,True,,"[0.001, 1000000000.0]",Column total volume of the stages
+RefluxRatio,Ratio,,True,Operation,"[0.0, 0.0]",Column molar reflux ratio defined as RefluxRatio = Lreflux / (Ldist + Vovhd). For VLLE/VLWE systems it relates to liquid phase 1.
+Tcond,Temperature,K,False,Condenser Section,"[100.0, 2000.0]",Column condenser temperature 
+VFcond,Mole_Composition,mole fraction,True,Operation,"[-0.99999, 1.99999]","Column condenser vapor fraction\n     VF<0: total condenser, subcooled\n     VF=0: total condenser at bubble point\n     0<VF<1: partial condenser. In the special case of a partial condenser at total reflux unspecify VFcond and specify Ldist=0 instead. "
+Pcond,Pressure,kPa,False,Pressures,"[1.0, 20000.0]",Column condenser pressure
+DPcond,Diff_Pressure,kPa,True,Pressures,"[-50000.0, 50000.0]",Column condenser pressure drop representing the pressure drop in the condenser inlet piping
+DPrflx,Diff_Pressure,kPa,False,Pressures,"[-50000.0, 50000.0]",Column DP across the internal reflux valve
+Ldist,Mole_Flow,kmol/s,False,Product Rates,"[-1000000.0, 1000000.0]",Column molar distillate rate
+Lmdist,Mass_Flow,kg/s,False,Product Rates,"[0.0, 0.0]",Column mass distillate rate
+Lreflux,Mole_Flow,kmol/s,False,Condenser Section,"[0.0, 1000000.0]",Column molar reflux rate. For VLLE/VLWE systems it relates to liquid phase 1.
+Lmreflux,Mass_Flow,kg/s,False,Condenser Section,"[0.0, 0.0]",Column mass reflux rate. For VLLE/VLWE systems it relates to liquid phase 1.
+DutyCond,Heat_Duty,kJ/s,False,Condenser Section,"[-1000000000.0, 1000000000.0]",Column condenser duty
+Hreflux,Mole_Enthalpy,kJ/kmol,False,Condenser Section,"[-1000000000.0, 1000000000.0]",Column reflux molar enthalpy
+zreflux[Methanol],Mole_Composition,mole fraction,False,Condenser Section,"[0.0, 1.0]",Column reflux molar composition
+zreflux[Water],Mole_Composition,mole fraction,False,Condenser Section,"[0.0, 1.0]",Column reflux molar composition
+LevelCond,Fraction,fraction,True,Dynamics and Controls,"[0.0, 1.0]",Column internal condenser level fraction
+ReboilRatio,Ratio,,False,Sump Section,"[0.0, 0.0]",Column molar reboil ratio defined as reboiler return rate / bottoms product rate
+RoutFrac,Fraction,fraction,False,Sump Section,"[0.0, 0.0]",Column reboiler molar draw rate fraction defined through BoilupRatio/VFboilup*Lbtms=RoutFrac*(Lbtms+Fboilup/VFboilup). RoutFrac is calculated for 'Internal' reboilers and specified for 'External' reboilers with a 'Single' sump.
+BoilupRatio,Ratio,,True,Operation,"[0.0, 0.0]",Column molar boilup ratio defined as the vapor boilup rate / liquid product rate. 
+Preb,Pressure,kPa,False,Pressures,"[1.0, 20000.0]",Column reboiler pressure
+VFboilup,Mole_Composition,mole fraction,True,Sump Section,"[0.0, 1.0]","Column reboiler molar return unbounded vapor fraction. The VFboilup=1 applies to Kettle reboilers, typical values for thermosyphon reboilers are 0<VFboilup<0.4"
+Fboilup,Mole_Flow,kmol/s,False,Reboiler Section,"[0.0, 1000000.0]",Column boilup molar rate representing the combined vapor and liquid phases of the reboiler return.\nWhen Sump=None the reboiler represents a Kettle reboiler and Fboilup is 100% vapor phase.\nFor Sump=Single Fboilup represents a two-phase mixture depending on the value assigned to VFboilup.
+Fmboilup,Mass_Flow,kg/s,False,Reboiler Section,"[0.0, 0.0]",Column boilup mass rate representing the combined vapor and liquid phases of the reboiler return.\nWhen Sump=None the reboiler represents a Kettle reboiler and Fboilup is 100% vapor phase.\nFor Sump=Single Fboilup represents a two-phase mixture depending on the value assigned to VFboilup.
+DutyReb,Heat_Duty,kJ/s,False,Reboiler Section,"[-1000000000.0, 1000000000.0]",Column reboiler duty
+Hboilup,Mole_Enthalpy,kJ/kmol,False,Reboiler Section,"[-1000000000.0, 1000000000.0]",Column boilup molar enthalpy
+zboilup[Methanol],Mole_Composition,mole fraction,False,Reboiler Section,"[0.0, 1.0]",Column boilup molar composition
+zboilup[Water],Mole_Composition,mole fraction,False,Reboiler Section,"[0.0, 1.0]",Column boilup molar composition
+Treb,Temperature,K,False,Reboiler Section,"[100.0, 2000.0]",Column reboiler temperature 
+LevelReb,Fraction,fraction,True,Dynamics and Controls,"[0.0, 1.0]",Column internal reboiler level fraction
+VFreb,Mole_Composition,mole fraction,False,Reboiler Section,"[0.0, 1.0]",Column reboiler vapor fraction
+DPreb,Diff_Pressure,kPa,True,Pressures,"[-50000.0, 50000.0]",Column reboiler pressure drop representing the pressure drop in the reboiler return line

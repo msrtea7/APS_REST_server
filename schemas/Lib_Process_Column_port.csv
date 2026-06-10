@@ -1,0 +1,15 @@
+name,direction,porttype,ismultiple
+Vout,Out,Lib:Submodels.FlowPort,False
+Lout,Out,Lib:Submodels.FlowPort,False
+Fin[S1],In,Lib:Submodels.FlowPort,True
+Top_Pressure,Out,Lib:Submodels.TransPort,False
+Dout,Out,Lib:Submodels.FlowPort,False
+Cond_Level,Out,Lib:Submodels.TransPort,False
+CondHeat_Control,In,Lib:Submodels.ControlPort,False
+Reflux_Control,In,Lib:Submodels.ControlPort,False
+RebHeat_Control,In,Lib:Submodels.ControlPort,False
+Reb_Level,Out,Lib:Submodels.TransPort,False
+RefCondIn,Out,Lib:Submodels.RefPort,False
+RefReflux,Out,Lib:Submodels.RefPort,False
+RefRebIn,Out,Lib:Submodels.RefPort,False
+RefBoilup,Out,Lib:Submodels.RefPort,False

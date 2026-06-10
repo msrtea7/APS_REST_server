@@ -3,21 +3,17 @@ W,Mass_Flow,kg/s,False,Operation,"[-1000000.0, 1000000.0]",Sink mass flow (forwa
 F,Mole_Flow,kmol/s,False,Operation,"[-1000000.0, 1000000.0]",Sink molar / standard volume flow
 Q,Vol_Flow,m3/s,False,Operation,"[-1000000.0, 1000000.0]",Sink actual volumetric flow (forward flow)
 P,Pressure,kPa,False,Operation,"[1.0, 20000.0]",Sink pressure
-T,Temperature,K,False,Operation,"[70.0, 2000.0]",Sink temperature (forward flow)
+T,Temperature,K,False,Operation,"[100.0, 2000.0]",Sink temperature (forward flow)
 VF,Mole_Composition,mole fraction,False,Operation,"[-0.99999, 1.99999]","Sink molar vapor fraction (forward flow)\nVLE: unbounded VFu where VFu < 0 is subcooled, VFu = 0 is the bubble point, VFu = 1 is the dew point, and VFu > 1 is superheated\nVLLE: bounded VF (0 ≤ VF ≤ 1) where VF = 0 is the bubble point (or subcooled) and VF = 1 is the dew point (or superheated)"
 H,Mole_Enthalpy,kJ/kmol,False,Operation,"[-1000000000.0, 1000000000.0]",Sink enthalpy 
 Hr,Mole_Enthalpy,kJ/kmol,False,Reverse Flow,"[0.0, 0.0]",Sink enthalpy (reverse flow)
-zr[N2],Mole_Composition,mole fraction,False,Reverse Flow,"[0.0, 1.0]",Sink composition (reverse flow)
-zr[O2],Mole_Composition,mole fraction,False,Reverse Flow,"[0.0, 1.0]",Sink composition (reverse flow)
-zr[H2O],Mole_Composition,mole fraction,False,Reverse Flow,"[0.0, 1.0]",Sink composition (reverse flow)
+zr[Methanol],Mole_Composition,mole fraction,False,Reverse Flow,"[0.0, 1.0]",Sink composition (reverse flow)
+zr[Water],Mole_Composition,mole fraction,False,Reverse Flow,"[0.0, 1.0]",Sink composition (reverse flow)
 setp,Dimensionless,,False,,"[0.0, 0.0]",Sink inlet pressure is set by upstream device
-z[N2],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink bulk molar composition
-z[O2],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink bulk molar composition
-z[H2O],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink bulk molar composition
+z[Methanol],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink bulk molar composition
+z[Water],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink bulk molar composition
 zrTot,Mole_Composition,mole fraction,False,,"[0.0, 0.0]",Sink composition (reverse flow) total
-x[N2],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink liquid phase molar composition
-x[O2],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink liquid phase molar composition
-x[H2O],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink liquid phase molar composition
-y[N2],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink vapor phase molar composition
-y[O2],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink vapor phase molar composition
-y[H2O],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink vapor phase molar composition
+x[Methanol],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink liquid phase molar composition
+x[Water],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink liquid phase molar composition
+y[Methanol],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink vapor phase molar composition
+y[Water],Mole_Composition,mole fraction,False,Composition,"[0.0, 1.0]",Sink vapor phase molar composition

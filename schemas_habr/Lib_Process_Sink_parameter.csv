@@ -1,5 +1,5 @@
 name,paramtype,uom,issetbyuser,group,description
-FluidType,Fluid Type,,True,Configuration,Sink fluid type
+FluidType,Fluid Type,,False,Configuration,Sink fluid type
 ModeCheck,Enumeration,,False,Configuration,Global check for mode change warnings while still in Process mode
 GlobalComponents,Enumeration,,False,Configuration,Global GlobalComponents option to display component fractions or flows on molar or mass basis
 Components,Enumeration,,False,Configuration,Sink Components option to display component fractions or flows on molar or mass basis.\nSet Components to Global and change it globally using GlobalComponents.

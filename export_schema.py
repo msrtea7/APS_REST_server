@@ -6,7 +6,7 @@ from System import Array, Object, String
 from System.Collections.Generic import Dictionary
 
 # ── Configuration ─────────────────────────────────────────────────────────────
-SIM_NAME   = "habor_clean"
+SIM_NAME   = "Sep_MeOHWater_base_2"
 OUTPUT_DIR = "schemas"
 TIMEOUT    = 5000
 # ──────────────────────────────────────────────────────────────────────────────

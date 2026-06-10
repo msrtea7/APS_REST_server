@@ -1,0 +1,21 @@
+name,vartype,uom,specified,group,range,description
+W,Mass_Flow,kg/s,True,Operation,"[-1000000.0, 1000000.0]",Source forward mass flow
+F,Mole_Flow,kmol/s,False,Operation,"[-1000000.0, 1000000.0]",Source molar or gas standard volumetric flow (before reaction)
+Q,Vol_Flow,m3/s,False,Operation,"[-1000000.0, 1000000.0]",Source forward actual volumetric flow (after reaction)
+P,Pressure,kPa,True,Operation,"[1.0, 20000.0]",Source pressure
+T,Temperature,K,True,Operation,"[70.0, 2000.0]",Source equilibrium temperature
+VF,Mole_Composition,mole fraction,False,Operation,"[-0.99999, 1.99999]","Source unbounded molar vapor fraction (after reaction).\nVF < 0 is subcooled, VF = 0 is the bubble point, VF = 1 is the dew point, and VF > 1 is superheated"
+M[N2],Moles,kmol,True,Operation,"[0.0, 1000000.0]","Source unnormalized molar feed composition (before reaction). To specify in fractions, specify all but one and specify Mt=1"
+M[O2],Moles,kmol,True,Operation,"[0.0, 1000000.0]","Source unnormalized molar feed composition (before reaction). To specify in fractions, specify all but one and specify Mt=1"
+M[H2O],Moles,kmol,True,Operation,"[0.0, 1000000.0]","Source unnormalized molar feed composition (before reaction). To specify in fractions, specify all but one and specify Mt=1"
+Mt,Moles,kmol,False,Operation,"[0.0, 1000000.0]",Source total moles for composition normalization
+z[N2],Mole_Composition,mole fraction,False,Operation,"[0.0, 1.0]",Source mole fractions (before reaction). Avoid specifying and instead specify M.
+z[O2],Mole_Composition,mole fraction,False,Operation,"[0.0, 1.0]",Source mole fractions (before reaction). Avoid specifying and instead specify M.
+z[H2O],Mole_Composition,mole fraction,False,Operation,"[0.0, 1.0]",Source mole fractions (before reaction). Avoid specifying and instead specify M.
+zm[N2],Mass_Composition,mass fraction,False,Operation,"[0.0, 0.0]",Source mass fractions (before reaction). Avoid specifying and instead specify M.
+zm[O2],Mass_Composition,mass fraction,False,Operation,"[0.0, 0.0]",Source mass fractions (before reaction). Avoid specifying and instead specify M.
+zm[H2O],Mass_Composition,mass fraction,False,Operation,"[0.0, 0.0]",Source mass fractions (before reaction). Avoid specifying and instead specify M.
+MW,Mole_Weight,kg/kmol,False,Operation,"[1.0, 1000000.0]",Source molecular weight (before reaction)
+H,Mole_Enthalpy,kJ/kmol,False,,"[-1000000000.0, 1000000000.0]",Source molar enthalpy (after reaction)
+Feps,Mole_Flow,kmol/s,False,,"[0.0, 0.0]",Source small sweep flow safeguard to issue a warning if the flow is smaller than FRramp
+LF,Mole_Composition,mole fraction,False,,"[0.0, 1.0]",Source molar liquid fraction
